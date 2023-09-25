@@ -93,14 +93,6 @@
         
         }
 
-
-
-
-
-
-
-
-
       .karty:hover{
         text-decoration: none;
         outline: 1px;
@@ -138,8 +130,6 @@
         border-radius: 15px;
 }
 
-
-
     div > div {
         margin:15px;
         padding:15px;
@@ -153,10 +143,8 @@
         background-color: #ffd100;
         }
 
-
-
-
     #Tabelki {
+        overflow: auto;
         float:left;
         width:88.5%;
         background-color:#202020;
@@ -166,26 +154,35 @@
 
         
         #Tabela1 { 
-        border: 1px solid #ffd100;
-        background-color:#202020;
+        border: 2px solid #ffd100;
+        background-color:#202020;     
         width: 40%;
-        height: 40px;
-        
+        float: left;
+        padding: 10px;
+        margin: 10px;
         }
 
         #Tabela2 { 
+        border: 2px solid #ffd100;
+        background-color:#202020;
         width: 40%;
-        height: 40px;
-        
+        float: left;
+        padding: 10px;
+        margin: 10px;
         }
 
         #Tabela3 { 
+        border: 2px solid #ffd100;
+        background-color:#202020; 
         width: 40%;
-        height: 40px;
-        
+        float: left;
+        padding: 10px;
+        margin: 10px;
         }
 
-
+table:nth-child(odd){
+  color:green;
+}
 
 
   </style>
@@ -436,9 +433,8 @@
                 </a>
             </div>
 
-
             <div id="Tabelki">
-              <div id="Tabela1">
+              <table id="Tabela1">
                   <tr>
                       <th>Naglówek 1</th>
                       <th>Naglówek 2</th>
@@ -459,8 +455,8 @@
                       <td>Naglówek 2_3</td>
                       <td>Naglówek 3_3</td>
                   </tr>
-              </div>
-              <div id="Tabela2">
+                </table>
+              <table id="Tabela2">
                 <tr>
                     <th>Naglówek 1</th>
                     <th>Naglówek 2</th>
@@ -481,8 +477,8 @@
                     <td>Naglówek 2_3</td>
                     <td>Naglówek 3_3</td>
                 </tr>
-            </div>
-            <div id="Tabela3">
+              </table>
+            <table id="Tabela3">
               <tr>
                   <th>Naglówek 1</th>
                   <th>Naglówek 2</th>
@@ -503,7 +499,7 @@
                   <td>Naglówek 2_3</td>
                   <td>Naglówek 3_3</td>
               </tr>
-          </div>
+            </table>
         </div>
 
           </div>
